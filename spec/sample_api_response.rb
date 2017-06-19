@@ -10,7 +10,7 @@
     "title": "Google Custom Search - red",
     "totalResults": "655000000",
     "searchTerms": "red",
-    "count": 10,
+    "count": 5,
     "startIndex": 1,
     "inputEncoding": "utf8",
     "outputEncoding": "utf8",
@@ -24,8 +24,8 @@
     "title": "Google Custom Search - red",
     "totalResults": "655000000",
     "searchTerms": "red",
-    "count": 10,
-    "startIndex": 11,
+    "count": 5,
+    "startIndex": 6,
     "inputEncoding": "utf8",
     "outputEncoding": "utf8",
     "safe": "off",
@@ -38,8 +38,8 @@
   "title": "Google"
  },
  "searchInformation": {
-  "searchTime": 0.512228,
-  "formattedSearchTime": "0.51",
+  "searchTime": 0.280264,
+  "formattedSearchTime": "0.28",
   "totalResults": "655000000",
   "formattedTotalResults": "655,000,000"
  },
@@ -65,6 +65,25 @@
   },
   {
    "kind": "customsearch#result",
+   "title": "Google Chrome Privacy Whitepaper",
+   "htmlTitle": "Google Chrome Privacy Whitepaper",
+   "link": "https://www.google.com/chrome/assets/common/images/screenshots/privacy/03-malware.png",
+   "displayLink": "www.google.com",
+   "snippet": "Google Chrome Privacy Whitepaper",
+   "htmlSnippet": "Google Chrome Privacy Whitepaper",
+   "mime": "image/png",
+   "image": {
+    "contextLink": "https://www.google.com/chrome/browser/privacy/whitepaper.html",
+    "height": 459,
+    "width": 473,
+    "byteSize": 48995,
+    "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmsHJf8UAf04RYYRok7f3v61EWsHmPEp75RKiajG2zOfvhiVY_PDpfliIq",
+    "thumbnailHeight": 125,
+    "thumbnailWidth": 129
+   }
+  },
+  {
+   "kind": "customsearch#result",
    "title": "Lunar New Year 2016",
    "htmlTitle": "Lunar New Year 2016",
    "link": "http://www.google.com/logos/doodles/2016/childrens-day-2016-australia-5690217928327168-hp.jpg",
@@ -80,25 +99,6 @@
     "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKB9LDe8syn3WEt2ZI_S0_cuV-uHZTPdApyv3raJHTLiSwYgLv7xwtfJgp",
     "thumbnailHeight": 53,
     "thumbnailWidth": 133
-   }
-  },
-  {
-   "kind": "customsearch#result",
-   "title": "Buy - Chromecast - Google",
-   "htmlTitle": "Buy - Chromecast - Google",
-   "link": "https://www.google.com/chromecast/static/images/buy/retailers_staples.svg",
-   "displayLink": "www.google.com",
-   "snippet": "Buy - Chromecast - Google",
-   "htmlSnippet": "Buy - Chromecast - Google",
-   "mime": "image/svg+xml",
-   "image": {
-    "contextLink": "https://www.google.com/chromecast/buy-tv/",
-    "height": 220,
-    "width": 509,
-    "byteSize": 4568,
-    "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZl7PiK6F-IhOikzNrA6cdTriMdofL0onVABjyIwL-2yIeOad3wrwOK8Iz",
-    "thumbnailHeight": 57,
-    "thumbnailWidth": 131
    }
   },
   {
@@ -137,101 +137,6 @@
     "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8ELwggwt_lOEkpzHHtOMBZ_-IT3M6LWyRhYhG0CcrA6cTHKkajPIzL0",
     "thumbnailHeight": 90,
     "thumbnailWidth": 112
-   }
-  },
-  {
-   "kind": "customsearch#result",
-   "title": "Lunar New Year 2016",
-   "htmlTitle": "Lunar New Year 2016",
-   "link": "http://www.google.com/logos/doodles/2015/swiss-national-day-2015-6237153222721536-hp.jpg",
-   "displayLink": "www.google.com",
-   "snippet": "Lunar New Year 2016",
-   "htmlSnippet": "Lunar New Year 2016",
-   "mime": "image/jpeg",
-   "image": {
-    "contextLink": "http://www.google.com/doodles/lunar-new-year-2016",
-    "height": 200,
-    "width": 500,
-    "byteSize": 29602,
-    "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZXEAYsgRLAYtlyMcKOEj6FR8Lbj3fSUVRMzytMNPz5t3Jw9Gx8qEvmtql",
-    "thumbnailHeight": 52,
-    "thumbnailWidth": 130
-   }
-  },
-  {
-   "kind": "customsearch#result",
-   "title": "What it Takes to be Trusted – Google Street View",
-   "htmlTitle": "What it Takes to be Trusted – Google Street View",
-   "link": "https://www.google.com/streetview/images/earn/thumb-connectivity.png",
-   "displayLink": "www.google.com",
-   "snippet": "What it Takes to be Trusted – Google Street View",
-   "htmlSnippet": "What it Takes to be Trusted – Google Street View",
-   "mime": "image/png",
-   "image": {
-    "contextLink": "https://www.google.com/streetview/earn/",
-    "height": 232,
-    "width": 371,
-    "byteSize": 4886,
-    "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbrB0fyTtCjDm-zlkGNM_92_A2qQJb8A15fFdPdrMYXfukDQ5lfAJrmJE",
-    "thumbnailHeight": 76,
-    "thumbnailWidth": 122
-   }
-  },
-  {
-   "kind": "customsearch#result",
-   "title": "Neighbors Against Irresponsible Logging (NAIL) – Google Earth Outreach",
-   "htmlTitle": "Neighbors Against Irresponsible Logging (NAIL) – Google Earth Outreach",
-   "link": "https://www.google.com/earth/outreach/images/stories_nail2.jpg",
-   "displayLink": "www.google.com",
-   "snippet": "Neighbors Against Irresponsible Logging (NAIL) – Google Earth Outreach",
-   "htmlSnippet": "Neighbors Against Irresponsible Logging (NAIL) – Google Earth Outreach",
-   "mime": "image/jpeg",
-   "image": {
-    "contextLink": "https://www.google.com/earth/outreach/success-stories/neighbors-against-irresponsible-logging-nail/",
-    "height": 472,
-    "width": 640,
-    "byteSize": 118734,
-    "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7FH4jzRJqjJ9yr5XQbSQjNdEMbInIn4STBOuLXQMvr3JiLVjvS2KpeXBu",
-    "thumbnailHeight": 101,
-    "thumbnailWidth": 137
-   }
-  },
-  {
-   "kind": "customsearch#result",
-   "title": "Buy - Chromecast - Google",
-   "htmlTitle": "Buy - Chromecast - Google",
-   "link": "https://www.google.com/chromecast/static/images/buy/retailers_target.svg",
-   "displayLink": "www.google.com",
-   "snippet": "Buy - Chromecast - Google",
-   "htmlSnippet": "Buy - Chromecast - Google",
-   "mime": "image/svg+xml",
-   "image": {
-    "contextLink": "https://www.google.com/chromecast/buy-tv/",
-    "height": 220,
-    "width": 509,
-    "byteSize": 44575,
-    "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqAenIN2XyhTKbawHaD6xY1TVSfuZUYbX6yKJesvjJDL4FSIk2RuUtkrQ",
-    "thumbnailHeight": 57,
-    "thumbnailWidth": 131
-   }
-  },
-  {
-   "kind": "customsearch#result",
-   "title": "Street View Treks: Taj Mahal – About – Google Maps",
-   "htmlTitle": "Street View Treks: Taj Mahal – About – Google Maps",
-   "link": "https://www.google.com/maps/about/images/treks/tajmahal4-carousel.jpg",
-   "displayLink": "www.google.com",
-   "snippet": "Street View Treks: Taj Mahal – About – Google Maps",
-   "htmlSnippet": "Street View Treks: Taj Mahal – About – Google Maps",
-   "mime": "image/jpeg",
-   "image": {
-    "contextLink": "https://www.google.com/maps/about/behind-the-scenes/streetview/treks/taj-mahal/",
-    "height": 750,
-    "width": 1500,
-    "byteSize": 265438,
-    "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW86TyhIpgDCO8hOC0vySh8HAWn-1tpVnHxBE2hGDr6tP2l8nXWMMtcNC0",
-    "thumbnailHeight": 75,
-    "thumbnailWidth": 150
    }
   }
  ]
