@@ -1,7 +1,7 @@
 require './app/models/result'
 
 describe Result do
-  let(:api) { JSON.parse(File.read('./spec/sample_api_response.rb'))}
+  let(:api) { File.read('./spec/sample_api_response.rb')}
   subject(:result) { described_class.new(api) }
 
   describe('#images') do
