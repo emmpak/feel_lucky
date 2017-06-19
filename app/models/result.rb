@@ -2,6 +2,12 @@ class Result
   attr_reader :images
 
   def initialize(api_response)
-    @images = [1, 2, 3, 4, 5]
+    @images = get_links(api_response)
+  end
+
+  private
+
+  def get_links(api_response)
+    api_response['items'].map{ |query| query['link'] }
   end
 end
