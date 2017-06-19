@@ -9,4 +9,9 @@ feature 'view colours' do
     expect(page).to have_css('#blue')
     expect(page).to have_css('#purple')
   end
+
+  scenario 'colors are clickable' do
+    visit('/')
+    expect(page).to have_selector('a', count: 7)
+  end
 end
