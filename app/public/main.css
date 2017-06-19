@@ -66,9 +66,14 @@ html, body {
   width: 100%;
 }
 
-.colours {
+.colors {
   display: flex;
   justify-content: center;
   align-items: stretch;
   height: 100vh;
+}
+
+.images {
+  display: flex;
+  align-items:center;
 }

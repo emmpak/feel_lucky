@@ -4,6 +4,12 @@ describe Result do
   let(:api) { File.read('./spec/sample_api_response.rb')}
   subject(:result) { described_class.new(api) }
 
+  describe('#top_image') do
+    it('retrieves the top search result') do
+      expect(result.top_image).to eq({"Street View Treks: Petra"=>"https://www.google.com/maps/about/behind-the-scenes/streetview/treks/petra/images/og-image.jpg"})
+    end
+  end
+
   describe('#images') do
     it('stores five images returned from the api call') do
       expect(result.images.count).to eq 5

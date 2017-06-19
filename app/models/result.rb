@@ -5,6 +5,10 @@ class Result
     @images = get_links(api_response)
   end
 
+  def top_image
+    self.images[0]
+  end
+
   private
 
   def get_links(api_response)

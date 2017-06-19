@@ -1,8 +1,12 @@
 <div class='rowSec'>
   <div class='col-10'>
+    <div id='top-image col-10'>
+      <%= <img src="<%= image.values[0] %>" alt="<%= image.keys[0] %>" style='width: 100%'>
+
+    </div>
     <% @result.images.each do |image| %>
       <div class='col-2'>
-        <img src="<%= image.values[0] %>" alt="<%= image.keys[0] %>">
+        <img src="<%= image.values[0] %>" alt="<%= image.keys[0] %>" style='width: 100%'>
       </div>
     <% end %>
   </div>
