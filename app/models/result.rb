@@ -8,6 +8,6 @@ class Result
   private
 
   def get_links(api_response)
-    api_response['items'].map{ |query| query['link'] }
+    api_response['items'].map{ |query| {query['title']=> query['link']}}
   end
 end
