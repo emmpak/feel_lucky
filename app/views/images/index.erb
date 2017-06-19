@@ -1,13 +1,18 @@
 <div class='rowSec'>
-  <div class='col-10'>
-    <div id='top-image col-10'>
-      <%= <img src="<%= image.values[0] %>" alt="<%= image.keys[0] %>" style='width: 100%'>
-
-    </div>
-    <% @result.images.each do |image| %>
-      <div class='col-2'>
-        <img src="<%= image.values[0] %>" alt="<%= image.keys[0] %>" style='width: 100%'>
+  <div class='images-container col-8'>
+      <div id='top-image' class='col-12'>
+        <img src="<%= @result.top_image.values[0] %>" alt="<%= @result.top_image.keys[0] %>" style='width: 100%'>
       </div>
-    <% end %>
-  </div>
+      <div id='additional-images' class='col-12'>
+        <% @result.additional_images.each do |image| %>
+        <div class='col-3'>
+          <img src="<%= image.values[0] %>" alt="<%= image.keys[0] %>" style='width: 100%'>
+        </div>
+        <% end %>
+      </div>
+    </div>
+
+
+
+  <div class='query col-2'></div>
 </div>

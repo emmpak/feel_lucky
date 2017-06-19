@@ -9,6 +9,10 @@ class Result
     self.images[0]
   end
 
+  def additional_images
+    self.images[1..-1]
+  end
+
   private
 
   def get_links(api_response)
