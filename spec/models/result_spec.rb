@@ -5,8 +5,8 @@ describe Result do
   subject(:result) { described_class.new(api) }
 
   describe('#top_image') do
-    it('retrieves the top search result') do
-      expect(result.top_image).to eq({"Street View Treks: Petra"=>"https://www.google.com/maps/about/behind-the-scenes/streetview/treks/petra/images/og-image.jpg"})
+    it('formats the top search result as a link') do
+      expect(result.top_image).to eq("<a href='https://www.google.com/maps/about/behind-the-scenes/streetview/treks/petra/images/og-image.jpg'><img src='https://www.google.com/maps/about/behind-the-scenes/streetview/treks/petra/images/og-image.jpg' alt='Street View Treks: Petra' style='100%'></a>")
     end
   end
 

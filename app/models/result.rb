@@ -6,7 +6,9 @@ class Result
   end
 
   def top_image
-    self.images[0]
+    title = self.images[0].keys[0]
+    link = self.images[0].values[0]
+    "<a href='#{link}'><img src='#{link}' alt='#{title}' style='100%'></a>"
   end
 
   def additional_images
