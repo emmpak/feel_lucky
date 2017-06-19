@@ -1,0 +1,67 @@
+* {
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+        box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/4d/5a/b0/4d5ab01b078ed79957cf0ec6ee77a83e.jpg");
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+}
+.grid {
+  margin: 10px auto;
+  max-width: 1260px;
+  width: 100%;
+  height: 100%;
+}
+.rowSec {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; /* This will make the columns align next to each other, if their width is defined. */
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
