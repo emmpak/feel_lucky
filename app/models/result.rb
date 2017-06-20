@@ -8,11 +8,16 @@ class Result
   def top_image
     title = self.images[0].keys[0]
     link = self.images[0].values[0]
-    "<a href='#{link}'><img src='#{link}' alt='#{title}' style='100%'></a>"
+    "<a href='#{link}'><img src='#{link}' alt='#{title}' style='width: 100%'></a>"
   end
 
   def additional_images
-    self.images[1..-1]
+    html = self.images[1..-1].map do |image|
+      "<div class='col-3'>" +
+      "<img src='#{image.values[0]}' alt='#{image.keys[0]}' style='width: 100%'>" +
+      "</div>"
+    end
+    html.join(' ')
   end
 
   private

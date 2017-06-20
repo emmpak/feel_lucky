@@ -4,11 +4,7 @@
         <%= @result.top_image %>
       </div>
       <div id='additional-images' class='col-12'>
-        <% @result.additional_images.each do |image| %>
-        <div class='col-3'>
-          <img src="<%= image.values[0] %>" alt="<%= image.keys[0] %>" style='width: 100%'>
-        </div>
-        <% end %>
+        <%= @result.additional_images %>
       </div>
     </div>
 
