@@ -2,7 +2,7 @@ require './app/models/result'
 
 describe Result do
   let(:api) { File.read('./spec/sample_api_response.rb')}
-  let(:format_class) { double(:format_class, top_image_html: nil) }
+  let(:format_class) { double(:format_class, top_image_html: nil, regular_image_html: nil) }
   subject(:result) { described_class.new(api, format_class) }
 
   describe('#top_image') do
@@ -14,7 +14,8 @@ describe Result do
 
   describe('#additional_images') do
     it('returns an array without the top search results') do
-      expect(result.additional_images).to include("<div class='col-3'><img src='https://www.google.com/chrome/assets/common/images/screenshots/privacy/03-malware.png' alt='Google Chrome Privacy Whitepaper' style='width: 100%'></div>")
+      expect(format_class).to receive(:regular_image_html).exactly(4).times
+      result.additional_images
     end
   end
 

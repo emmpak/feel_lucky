@@ -12,16 +12,10 @@ class Result
     title = images[0].keys[0]
     link = images[0].values[0]
     format_class.top_image_html(title: title, link: link)
-    # "<a href='#{link}'><img src='#{link}' alt='#{title}' style='width: 100%'></a>"
   end
 
   def additional_images
-    html = images[1..-1].map do |image|
-      "<div class='col-3'>" +
-      "<img src='#{image.values[0]}' alt='#{image.keys[0]}' style='width: 100%'>" +
-      "</div>"
-    end
-    html.join(' ')
+    images[1..-1].map { |image| format_class.regular_image_html(title: image.keys[0], link: image.values[0]) }.join(' ')
   end
 
   private
