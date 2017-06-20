@@ -14,11 +14,12 @@ class App < Sinatra::Base
   end
 
   get '/images/:color' do
-    search = Search.create(color: params[:color], term: Term.randomize).build
-    # search = Search.build(color: params[:color], term: Term.randomize)
-    uri = URI(search)
-    response = Net::HTTP.get(uri)
-    @result = Result.new(response)
+    search = Search.new(color: params[:color], term: Term.randomize)
+    uri = URI(search.build)
+    http_response = Net::HTTP.get(uri)
+    search.response = http_response
+    search.save
+    @result = Result.new(http_response)
     # @result = Result.new(File.read('./spec/sample_api_response.rb'))
     erb :'images/index'
   end

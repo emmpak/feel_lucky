@@ -1,7 +1,9 @@
 <div class='rowSec'>
   <div class='colors col-12'>
     <% @colors.each do |color| %>
-      <a class='col-2' id="<%= color %>" style="background-color: <%= color %>" href="/images/<%= color%>"></a>
-    <% end %>
+      <div class='col-2' style="background-color: <%= color %>" onclick="submitForm(<%= color %>)">
+        <form action="/search/new/<%= color %>" method="post" id="<%= color %>"></form>
+      </div>
+      <% end %>
   </div>
 </div>

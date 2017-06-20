@@ -4,6 +4,7 @@ class Search
   property :id,         Serial
   property :color,      String
   property :term,       String
+  property :response,   Text
   property :created_at, DateTime
   property :created_on, Date
 
