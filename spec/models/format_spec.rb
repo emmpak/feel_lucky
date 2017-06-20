@@ -1,4 +1,4 @@
-require('./app/models/format')
+require './app/models/format'
 
 describe Format do
   let(:title) { "Street View Treks: Petra" }
