@@ -1,6 +1,13 @@
 class Search
+  include DataMapper::Resource
 
-  def self.build(color:, term:)
+  property :id,         Serial
+  property :color,      String
+  property :term,       String
+  property :created_at, DateTime
+  property :created_on, Date
+
+  def build
     "https://www.googleapis.com/customsearch/v1?key=#{ENV["API_KEY"]}&cx=#{ENV["CX_ID"]}&q=#{color}%20#{term}&searchType=image&num=5&alt=json"
   end
 end
