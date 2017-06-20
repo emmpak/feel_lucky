@@ -4,9 +4,7 @@ require 'dotenv/load'
 require 'sinatra/base'
 require 'net/http'
 
-require_relative 'models/result'
-require_relative 'models/search'
-require_relative 'models/term'
+require_relative 'data_mapper_setup'
 
 class App < Sinatra::Base
 
