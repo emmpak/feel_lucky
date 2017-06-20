@@ -1,3 +1,5 @@
+ENV['RACK_ENV'] ||= 'development'
+
 require 'dotenv/load'
 require 'sinatra/base'
 require 'net/http'
