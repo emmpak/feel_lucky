@@ -2,6 +2,8 @@ ENV['RACK_ENV'] ='test'
 
 require 'capybara/rspec'
 require 'database_cleaner'
+require 'coveralls'
+
 require './app/app'
 
 Capybara.app = App
@@ -22,6 +24,12 @@ Capybara.app = App
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  SimpleCov.formatters = [
+    SimpleCov::Formatter::HTMLFormatter,
+    Coveralls::SimpleCov::Formatter
+  ]
+  Coveralls.wear!
+  
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.clean_with(:truncation)
@@ -34,6 +42,8 @@ RSpec.configure do |config|
   config.after(:each) do
     DatabaseCleaner.clean
   end
+
+
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
