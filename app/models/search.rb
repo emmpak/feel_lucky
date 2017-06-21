@@ -11,4 +11,9 @@ class Search
   def build
     "https://www.googleapis.com/customsearch/v1?key=#{ENV["API_KEY"]}&cx=#{ENV["CX_ID"]}&q=#{color}%20#{term}&searchType=image&num=5&alt=json"
   end
+
+  def self.reverse_order
+    self.all.reverse
+  end
+
 end

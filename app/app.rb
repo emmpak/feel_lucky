@@ -25,7 +25,7 @@ class App < Sinatra::Base
   get '/search' do
     # @result = Result.new(Search.last.response)
     @result = Result.new(File.read('./spec/sample_api_response.rb'))
-    @previous = Search.all
+    @previous = Search.reverse_order
     erb :'images/index'
   end
 end

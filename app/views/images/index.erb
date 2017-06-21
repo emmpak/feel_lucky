@@ -1,5 +1,11 @@
+
 <div class='rowSec'>
   <div class='images-container col-8'>
+    <div class='col-12 images-title' style='color: <%= @previous.last.color %>'>
+      <u><%= @previous.last.color.capitalize %> <%= @previous.last.term.capitalize %></u>
+    </div>
+
+    <div class='col-12'>
       <div id='top-image' class='col-12'>
         <%= @result.top_image %>
       </div>
@@ -7,10 +13,10 @@
         <%= @result.additional_images %>
       </div>
     </div>
-
-
+  </div>
 
   <div class='query col-4'>
+    <h3> Previous searches </h3>
     <% @previous.each do |search| %>
       <div class='previous col-12'>
         <div class='col-6 info' style='color: <%= search.color %>'> <%= search.color %> <%= search.term %> </div>
