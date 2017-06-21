@@ -10,5 +10,12 @@
 
 
 
-  <div class='query col-2'></div>
+  <div class='query col-4'>
+    <% @previous.each do |search| %>
+      <div class='previous col-12'>
+        <div class='col-6 info' style='color: <%= search.color %>'> <%= search.color %> <%= search.term %> </div>
+        <div class='col-12 date'> <%= search.created_at.strftime("Posted on %d %B %Y") %> at  <%= search.created_at.strftime("%l:%M %p") %></div>
+      </div>
+    <% end %>
+  </div>
 </div>
