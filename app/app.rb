@@ -1,6 +1,6 @@
 ENV['RACK_ENV'] ||= 'development'
 
-require 'dotenv/load'
+require 'dotenv/load' if (ENV['RUBY_ENV'] == "development" || ENV['RUBY_ENV'] == "test")
 require 'sinatra/base'
 require 'net/http'
 
@@ -24,7 +24,7 @@ class App < Sinatra::Base
 
   get '/search' do
     # @result = Result.new(Search.last.response)
-    
+
     # Stubbed API response
     @result = Result.new(File.read('./spec/sample_api_response.rb'))
     @previous = Search.reverse_order
