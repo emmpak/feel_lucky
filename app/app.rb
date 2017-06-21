@@ -14,7 +14,7 @@ class App < Sinatra::Base
   end
 
   post '/search/new/:color' do
-    search = Search.new(color: params[:color], term: Term.randomize)
+    search = Search.new(color: params[:color], term: Noun.randomize)
     uri = URI(search.build)
     http_response = Net::HTTP.get(uri)
     search.response = http_response
