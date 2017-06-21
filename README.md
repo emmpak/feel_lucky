@@ -47,5 +47,4 @@ CX_ID = YOUR SEARCH ENGINE ID
 ### Further Improvements
 
 * Add a **Search again** button on `/search` page
-* Deploy to Heroku
 * Ability to run previous searches
