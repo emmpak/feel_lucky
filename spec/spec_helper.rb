@@ -3,6 +3,8 @@ ENV['RACK_ENV'] ='test'
 require 'capybara/rspec'
 require 'database_cleaner'
 require 'coveralls'
+require 'simplecov'
+
 
 require './app/app'
 
@@ -29,7 +31,7 @@ RSpec.configure do |config|
     Coveralls::SimpleCov::Formatter
   ]
   Coveralls.wear!
-  
+
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.clean_with(:truncation)
