@@ -14,16 +14,18 @@ class App < Sinatra::Base
   end
 
   post '/search/new/:color' do
-    # search = Search.new(color: params[:color], term: Term.randomize)
-    # uri = URI(search.build)
-    # http_response = Net::HTTP.get(uri)
-    # search.response = http_response
-    # search.save
+    search = Search.new(color: params[:color], term: Term.randomize)
+    uri = URI(search.build)
+    http_response = Net::HTTP.get(uri)
+    search.response = http_response
+    search.save
     redirect '/search'
   end
 
   get '/search' do
     # @result = Result.new(Search.last.response)
+    
+    # Stubbed API response
     @result = Result.new(File.read('./spec/sample_api_response.rb'))
     @previous = Search.reverse_order
     erb :'images/index'
