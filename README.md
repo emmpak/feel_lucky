@@ -48,3 +48,4 @@ CX_ID = YOUR SEARCH ENGINE ID
 
 * Add a **Search again** button on `/search` page
 * Ability to run previous searches
+* Add travis
