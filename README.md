@@ -1,5 +1,8 @@
 Feel Lucky
 =================
+[![Build Status](https://travis-ci.org/emmpak/feel_lucky.svg?branch=master)](https://travis-ci.org/emmpak/feel_lucky)
+[![Coverage Status](https://coveralls.io/repos/github/emmpak/feel_lucky/badge.svg?branch=master)](https://coveralls.io/github/emmpak/feel_lucky?branch=master)
+
 Are you feeling lucky today? Pick a color and let your imagination run wild.
 
 ### Tech
@@ -48,4 +51,3 @@ CX_ID = YOUR SEARCH ENGINE ID
 
 * Add a **Search again** button on `/search` page
 * Ability to run previous searches
-* Add travis
