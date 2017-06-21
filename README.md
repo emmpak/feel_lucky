@@ -37,6 +37,7 @@ CX_ID = YOUR SEARCH ENGINE ID
 
 ##### Final Steps
 * Run `rspec` to make sure that all tests are passing
+* Uncomment the API response on line 26 in the `app.rb` file and remove the stubbed response on line 29. You can use the stubbed response to avoid hitting the API call limit. 
 * Run `rackup`
 * Visit [localhost:9292](localhost:9292) in a browser
 * Pick a color
@@ -45,4 +46,4 @@ CX_ID = YOUR SEARCH ENGINE ID
 
 * Add a **Search again** button on `/search` page
 * Deploy to Heroku
-* Ability to run previous searches 
+* Ability to run previous searches
