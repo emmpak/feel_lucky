@@ -7,6 +7,8 @@ Are you feeling lucky today? Pick a color and let your imagination run wild.
 * Ruby, Sinatra, PostgrSQL, DataMapper, HTML, CSS, JavaScript RSpec, Capybara
 
 ### Live Version
+**[Feel Lucky](https://feel-lucky.herokuapp.com/)**
+
 Note that the Google Custom Search API key has a very low call threshold and you might not find yourself lucky. As an alternative, you can setup this app locally (see next section).
 
 ### Local Setup
@@ -37,7 +39,7 @@ CX_ID = YOUR SEARCH ENGINE ID
 
 ##### Final Steps
 * Run `rspec` to make sure that all tests are passing
-* Uncomment the API response on line 26 in the `app.rb` file and remove the stubbed response on line 29. You can use the stubbed response to avoid hitting the API call limit. 
+* Uncomment the API response on line 26 in the `app.rb` file and remove the stubbed response on line 29. You can use the stubbed response to avoid hitting the API call limit.
 * Run `rackup`
 * Visit [localhost:9292](localhost:9292) in a browser
 * Pick a color
