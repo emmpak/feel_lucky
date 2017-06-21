@@ -1,8 +1,8 @@
 feature 'images' do
 
   before do
-    visit('/')
-    click_link('red')
+    Search.create(color: 'red', term: 'mountain')
+    visit('/search')
   end
 
   scenario 'five images are shown' do

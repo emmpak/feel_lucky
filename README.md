@@ -40,3 +40,9 @@ CX_ID = YOUR SEARCH ENGINE ID
 * Run `rackup`
 * Visit [localhost:9292](localhost:9292) in a browser
 * Pick a color
+
+### Further Improvements
+
+* Add a **Search again** button on `/search` page
+* Deploy to Heroku
+* Ability to run previous searches 
